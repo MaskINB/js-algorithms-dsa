@@ -1,23 +1,8 @@
 {
-  "name": "algorithms-dsa",
-  "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "vitest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MaskINB/js-algorithms-dsa.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MaskINB/js-algorithms-dsa/issues"
-  },
-  "homepage": "https://github.com/MaskINB/js-algorithms-dsa#readme",
-  "description": "",
   "devDependencies": {
-    "jest": "^30.0.5"
+    "vitest": "^3.2.4"
   }
 }
