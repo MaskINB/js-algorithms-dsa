@@ -5,7 +5,7 @@
  */
 function findMax(arr) {
     // Check if array is empty
-    if (arr.length === 0) {
+    if (arr.length === 0) 
         return null;
     }
 
