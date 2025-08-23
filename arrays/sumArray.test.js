@@ -1,5 +1,4 @@
-import { describe, it, expect } from "vitest";
-const sumArray = require('./sumArray');
+import sumArray from './sumArray';
 
 describe('sumArray function', () => {
     it('should return the sum of all elements in the array', () => {
