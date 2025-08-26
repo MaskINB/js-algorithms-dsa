@@ -1,6 +1,7 @@
-function removeDuplicates(arr) {
+/*function removeDuplicates(arr) {
+
   let unique = [];
-  for (let i = 0; arr.lenth; i++) {
+  for (let i = 0; arr.length; i++) {
     if (!unique.includes(arr[i])) {
       unique.push(arr[i]);
     }
@@ -8,4 +9,19 @@ function removeDuplicates(arr) {
   return unique;
 }
 
-console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // [1, 2, 3, 4, 5]
+export default removeDuplicates;*/
+
+export function removeDuplicates(arr) {
+  let unique = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (!unique.includes(arr[i])) {
+      unique.push(arr[i]);
+    }
+  }
+  return unique;
+}
+
+
+
+
+
