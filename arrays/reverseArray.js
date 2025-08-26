@@ -1,5 +1,4 @@
 // reverseArray.js
-
 /**
  * Reverses an array in place
  * @param {Array} arr - The array to reverse
@@ -8,14 +7,12 @@
 function reverseArray(arr) {
   let start = 0;
   let end = arr.length - 1;
-
   while (start < end) {
     // Swap elements
     [arr[start], arr[end]] = [arr[end], arr[start]];
     start++;
     end--;
   }
-
   return arr;
 }
 
@@ -24,3 +21,13 @@ export default reverseArray;
 
 // Optional: Simple console test
 // console.log(reverseArray([1, 2, 3, 4, 5])); // [5, 4, 3, 2, 1]
+
+
+
+// add the inbulid function 
+/*
+function reverseArray(arr) {
+    arr.reverse();
+    return arr;
+}
+*/
