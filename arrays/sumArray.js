@@ -3,7 +3,9 @@ function sumArray(arr) {
     for (let i = 0; i < arr.length; i++) {
         sum += arr[i];
     }
-    return sum;b
+    return sum;
 }
 
 module.exports = sumArray;
+
+console.log(sumArray([1, 2, 3, 5])); // Output: 11
