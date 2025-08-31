@@ -27,3 +27,17 @@ describe("Binary Search Tree", () => {
         expect(bst.root.right.right.value).toBe(8);
     });
 });
+
+describe("Binary Search Tree", () => {
+    it("should search for values correctly", () => {
+        const bst = new BinarySearchTree();
+        bst.insert(10);
+        bst.insert(5);
+        bst.insert(15);
+
+        expect(bst.search(10)).toBeTruthy();
+        expect(bst.search(5)).toBeTruthy();
+        expect(bst.search(15)).toBeTruthy();
+        expect(bst.search(7)).toBeFalsy();
+    });
+});

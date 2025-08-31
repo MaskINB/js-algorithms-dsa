@@ -14,6 +14,10 @@ export default class BinarySearchTree {
     insert(value) {
         this.root = insertBST(this.root, value);
     }
+
+    search(value) {
+        return searchBST(this.root, value);
+    }
 }
 
 function insertBST(node, value) {
@@ -29,5 +33,13 @@ function insertBST(node, value) {
     return node;
 }
 
-
-
+function searchBST(node, value) {
+    if (node === null || node.value === value) {
+        return node;
+    }
+    if (value < node.value) {
+        return searchBST(node.left, value);
+    } else {
+        return searchBST(node.right, value);
+    }
+}
