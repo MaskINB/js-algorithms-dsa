@@ -14,3 +14,16 @@ describe("Binary Search Tree", () => {
         expect(bst.root.right.value).toBe(15);
     });
 });
+
+describe("Binary Search Tree", () => {
+    it("should insert values correctly", () => {
+        const bst = new BinarySearchTree();
+        bst.insert(5);
+        bst.insert(7);
+        bst.insert(8);
+
+        expect(bst.root.value).toBe(5);
+        expect(bst.root.right.value).toBe(7);
+        expect(bst.root.right.right.value).toBe(8);
+    });
+});
